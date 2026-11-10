@@ -1,0 +1,20 @@
+{
+  "name": "pi-docent",
+  "version": "0.1.0",
+  "description": "Persistent per-repo helper agents for pi, with a TUI to talk to them directly",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "pi": { "extensions": ["./src/index.ts"] },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"src/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "@types/node": "^24",
+    "typebox": "*",
+    "typescript": "^5.9"
+  }
+}
